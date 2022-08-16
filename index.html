@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eri Muriithi Portfolio Website</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content="Machio Sports, Soccer academies, academies, training, coaches, soccer coaches " />
+    <meta name="author" content="Eric" />
+
+    <!-- App favicon -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+
+    <!-- Custom  sCss -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- toasty -->
+    <!-- put these into the <head> of your HTML -->
+    <link rel="stylesheet" href="./toasty/toasty.min.css" type="text/css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky navbar-light sticky-dark">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="logo text-uppercase" href="index-1.html">
+                <!--<img src="images/logo-light.png" class="logo-light" alt="" height="80">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="80">-->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#goals" class="nav-link">Goals</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>-->
+                    <!-- <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li> -->
+                </ul>
+                <a href="about.html" class="btn btn-success btn-rounded navbar-btn">Welcome</a>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero section Start -->
+    <section class="hero-section-5" id="home" style="background: linear-gradient(to bottom, rgba(29, 31, 41, 0.52), rgba(14, 53, 90, 0.73)), url(./images/eric.png); background-size: cover;">
+        <!-- <div class="bg-overlay"></div> -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="hero-wrapper text-center mb-4">
+                        <p class="font-16 text-uppercase text-white-50">Hi, I am Eric Muriithi</p>
+                        <h1 class="hero-title text-white mb-4">Full stack Engineer<span
+                                class="text-primary"> Node Js Developer.</span><span
+                                class="text-primary"> Backend Developer.</span> <span class="hero-title text-white mb-4">Web/UI Developer</h1>
+
+                        <p class="text-white-50">From Kenya</p>
+
+                        <!-- <div class="mt-4">
+                            <a href="#contacts" class="btn btn-primary mt-2 mr-2">Contact Me</a>
+                            <a href="#" class="btn btn-success mt-2 mr-2">Learn more</a>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Hero section End -->
+
+    <!-- Services start -->
+    <section class="section bg-light" id="skills">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h5 class="text-primary text-uppercase medium-title">Skills</h5>
+                        <h4 class="mb-3">These are some of the things I do well</h4>
+                        <!--<p>It will be as simple as occidental in fact, it will be Occidental.</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center p-4 mt-3">
+                        <div class="avatar-md mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <i data-feather="thumbs-up" class="icon-dual-primary"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-18">Python</h5>
+                            <!-- <p class="mb-0">We create employment for our communities by providing opportunies for locals to work</p> -->
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center p-4 mt-3">
+                        <div class="avatar-md mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <i data-feather="award" class="icon-dual-primary"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-18">Dart</h5>
+                          <!-- <p class="mb-0">We are a unique establishment in that we rehabilitate ailing domesticated and wild animals</p> -->
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center p-4 mt-3">
+                        <div class="avatar-md mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <i data-feather="thumbs-up" class="icon-dual-primary"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-18">Javascript</h5>
+           <!-- <p class="mb-0">We are in the process of starting our very own foundation to directly give back to our communities</p> -->
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center p-4 mt-3">
+                        <div class="avatar-md mx-auto mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <i data-feather="award" class="icon-dual-primary"></i>
+                            </span>
+                        </div>
+                        <h5 class="font-18">Node JS</h5>
+                          <!-- <p class="mb-0">We are a unique establishment in that we rehabilitate ailing domesticated and wild animals</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- end row -->
+
+            <!-- <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <a href="#" class="btn btn-success">Work with us</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Services end -->
+
+    <!-- Features start -->
+    <section class="section" id="resume">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h3 class="text-primary text-uppercase medium-title">Resume</h3>
+                        <!-- <h4 class="mb-3">Learn more about who we are and what we do</h4>
+                        <p>We are Bogoria Equatorial Farm, a company established in 2018 with a
+                            need to create safe havens for the rehabilitation, rearing, and sale of tortoises as well as other domesticated and wild animals.
+                            Located in Baringo county in Kenya, we have exported dozens of these repltiles for profit to the U.A.E, America, and Canada.
+                            At the same time empowering locals within the county with jobs as well as much needed training and exposure.
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <div class="avatar-md mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <i data-feather="bar-chart-2" class="icon-dual-primary"></i>
+                            </span>
+                        </div>
+                        <h5 class ="text-primary text-uppercase medium-title">Education</h5>
+                        <ol>
+                            <li>Advanced Diploma in Software Engineering from Edulink Intl College</li>
+                            <li>Bachelor of Science in Information Technology from Middlesex University Dubai</li>
+                        </ol>
+
+                        <!--<div class="row">
+                            <div class="col-sm-6">
+                                <p><i data-feather="check" class="icon-dual-success mr-2"></i> Values</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><i data-feather="check" class="icon-dual-success mr-2"></i> Manifesto</p>
+                            </div>
+                        </div>-->
+
+                        <!-- <div class="mt-4">
+                            <a href="#" class="btn btn-primary">Learn more <i data-feather="arrow-right"
+                                    class="icons-sm ml-1"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <div class="avatar-md mb-4">
+                            <span class="avatar-title rounded-circle bg-soft-primary">
+                                <i data-feather="bar-chart-2" class="icon-dual-primary"></i>
+                            </span>
+                        </div>
+                        <h5 class ="text-primary text-uppercase medium-title">Experience</h5>
+                        <ol>
+                            <li>Developed FasoCash, an app that facilitates transfer of funds within Burkina Faso</li>
+                            <li>Bulit user interface that simulated a game</li>
+                            <li>Built products and e-commerce solutions for individuals and businesses across the world since 2019 till today</li>
+                        </ol>
+
+                        <!--<div class="row">
+                            <div class="col-sm-6">
+                                <p><i data-feather="check" class="icon-dual-success mr-2"></i> Values</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p><i data-feather="check" class="icon-dual-success mr-2"></i> Manifesto</p>
+                            </div>
+                        </div>-->
+
+                        <!-- <div class="mt-4">
+                            <a href="#" class="btn btn-primary">Learn more <i data-feather="arrow-right"
+                                    class="icons-sm ml-1"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-5 ml-lg-auto col-sm-10">
+                    <div class="card border border-light shadow-none mt-5 mt-lg-0">
+                        <div class="card-header border-0 bg-transparent">
+                            <div>
+                                <i class="mdi mdi-circle text-danger mr-1"></i>
+                                <i class="mdi mdi-circle text-warning mr-1"></i>
+                                <i class="mdi mdi-circle text-success mr-1"></i>
+                            </div>
+                        </div>
+                        <div class="card-body bg-light">
+                            <div class="box-shadow">
+                                <img src="https://images.unsplash.com/photo-1630236397978-1e1ba4311454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" class="img-fluid mx-auto d-block">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- end row -->
+
+          
+            </section>
+            <!-- <section class="section" id="goals">
+                <div class="container">
+                    
+        
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div>
+                                <div class="avatar-md mb-4">
+                                    <span class="avatar-title rounded-circle bg-soft-primary">
+                                        <i data-feather="bar-chart-2" class="icon-dual-primary"></i>
+                                    </span>
+                                </div>
+                                <h3 class ="text-primary text-uppercase medium-title">Goals</h5>
+                                  <h4 class="mb-3">Short Term Goals</h4>
+                                <p class="mb-3">
+                                    We as an organization strongly believe that the journey of a thousand miles begins with the first step.
+                                    And so as a company we strive to:
+                                </p>
+        
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p><i data-feather="check" class="icon-dual-success mr-2"></i>Improve everyday</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><i data-feather="check" class="icon-dual-success mr-2"></i>Grow our communities</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><i data-feather="check" class="icon-dual-success mr-2"></i>Do everything with passion</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p><i data-feather="check" class="icon-dual-success mr-2"></i>Increase the forex circulation in Kenya by exporting our goods</p>
+                                    </div>
+                                </div>
+        
+                                <div class="mt-4">
+                                    <a href="#" class="btn btn-primary">Learn more <i data-feather="arrow-right"
+                                            class="icons-sm ml-1"></i></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-5 ml-lg-auto col-sm-8">
+                            <div class="card border border-light shadow-none mt-5 mt-lg-0">
+                                <div class="card-header border-0 bg-transparent">
+                                    <div>
+                                        <i class="mdi mdi-circle text-danger mr-1"></i>
+                                        <i class="mdi mdi-circle text-warning mr-1"></i>
+                                        <i class="mdi mdi-circle text-success mr-1"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body bg-light">
+                                    <div class="box-shadow">
+                                        <img src="images/ball.jpg" alt="Clean Haven Home" class="img-fluid mx-auto d-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+     
+        </section> -->
+    <!-- Features end -->
+
+    <!-- Testimonial start -->
+    <section class="section bg-light" id="testimonials">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h3 class="text-primary text-uppercase medium-title">Testimonials</h3>
+                        <h4 class="mb-3">What some of my clients have said</h4>
+                        <!--<p>It will be as simple as occidental in fact, it will be Occidental.</p>-->
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="mb-4"><i class="mdi mdi-format-quote-open text-primary h1 mr-1"></i>Satisfied
+                        Clients</h5>
+                    <div class="owl-carousel owl-theme testi-carousel" id="testi-carousel">
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <p class="mb-4">"World class standards, I am extremely impressed by the quality with how Eric completes his projects "</p>
+                                    <div class="media pt-3">
+                                        <div class="avatar-md mr-3">
+                                            <span
+                                                class="avatar-title rounded-circle bg-soft-primary text-primary font-16">
+                                                D
+                                            </span>
+                                        </div>
+                                        <div class="media-body align-self-center">
+                                            <h5 class="font-16">David Yapha</h5>
+                                            <span></span>
+                                        </div>
+                                        <div class="text-muted ml-2 align-self-end d-none d-lg-block">
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <p class="mb-4">" Eric has shown competency in their field of work. Highly recommended"</p>
+                                    <div class="media pt-3">
+                                        <div class="avatar-md mr-3">
+                                            <span
+                                                class="avatar-title rounded-circle bg-soft-primary text-primary font-16">
+                                                T
+                                            </span>
+                                        </div>
+                                        <div class="media-body align-self-center">
+                                            <h5 class="font-16">Timothy Omondi</h5>
+                                            <span></span>
+                                        </div>
+                                        <div class="text-muted ml-2 align-self-end d-none d-lg-block">
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="item">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <p class="mb-4">Super fast delivery time, and Patrick genuinely cares about all his clients.</p>
+                                    <div class="media pt-3">
+                                        <div class="avatar-md mr-3">
+                                            <span
+                                                class="avatar-title rounded-circle bg-soft-primary text-primary font-16">
+                                                J
+                                            </span>
+                                        </div>
+                                        <div class="media-body align-self-center">
+                                            <h5 class="font-16">James Ongora</h5>
+                                            <span>- Manutratech Client</span>
+                                        </div>
+                                        <div class="text-muted ml-2 align-self-end d-none d-lg-block">
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <p class="mb-4">I love everything about Manutratech, absolute professionalism and impeccable products!</p>
+                                    <div class="media pt-3">
+                                        <div class="avatar-md mr-3">
+                                            <span
+                                                class="avatar-title rounded-circle bg-soft-primary text-primary font-16">
+                                                J
+                                            </span>
+                                        </div>
+                                        <div class="media-body align-self-center">
+                                            <h5 class="font-16">Jason Solomon</h5>
+                                            <span>- Manutratech Client</span>
+                                        </div>
+                                        <div class="text-muted ml-2 align-self-end d-none d-lg-block">
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star text-warning"></i>
+                                            <i class="mdi mdi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <!--<div class="row mt-5">
+                <div class="col-xl-6 col-md-6">
+                    <div class="client-images">
+                        <img src="images/ligi.jpg" alt="client-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="client-images">
+                        <img src="images/fkf.jpg" alt="client-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="client-images">
+                        <img src="images/clients/safeway.jpg" alt="client-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="client-images">
+                        <img src="images/clients/tucha.jpg" alt="client-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+            </div>-->
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Testimonial end -->
+
+    <!-- Counter start -->
+    <!-- <section class="section bg-primary">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-7">
+                    <div class="text-center text-white-50">
+                        <h4 class="text-white">Why Choose Us?</h4>
+                        <p>We don't just say we're the best. Our stats show it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="counter">
+                <div class="col-xl-4 col-sm-6">
+                    <div class="text-center mt-4">
+                        <i data-feather="bookmark" class="icon-dual-success icons-lg"></i>
+                        <h2 class="counter-value text-white mt-4" data-count="35"></h2>
+                        <p class="font-16 text-white-50">Success Stories</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-sm-6">
+                    <div class="text-center mt-4">
+                        <i data-feather="user-plus" class="icon-dual-success icons-lg"></i>
+                        <h2 class="counter-value text-white mt-4" data-count="20">20</h2>
+                        <p class="font-16 text-white-50">No. of Trainings done</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <div class="text-center mt-4">
+                        <i data-feather="coffee" class="icon-dual-success icons-lg"></i>
+                        <h2 class="counter-value text-white mt-4" data-count="128">608</h2>
+                        <p class="font-16 text-white-50">Cups of coffee</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <div class="text-center mt-4">
+                        <i data-feather="award" class="icon-dual-success icons-lg"></i>
+                        <h2 class="counter-value text-white mt-4" data-count="2">2</h2>
+                        <p class="font-16 text-white-50">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+    <!-- Counter end -->
+
+    <!-- Pricing start -->
+    <!--         
+    <section class="section bg-light" id="pricing">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h5 class="text-primary text-uppercase small-title">Pricing</h5>
+                            <h4 class="mb-3">Choose your Plan</h4>
+                            <p>It will be as simple as occidental in fact, it will be Occidental.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mb-4">
+                            <ul class="nav nav-pills pricing-nav-tabs mb-4">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Monthly</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Yearly</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="pricing-plan card text-center">
+                            <div class="card-body p-4">
+                                <h5 class="mt-2 mb-5">Economy</h5>
+                                <h1 class="mb-5"><sup><small>$</small></sup>19/ <span class="font-16">Mo</span></h1>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Join now</a>
+                                </div>
+                                <div class="plan-features mt-5">
+                                    <p>Bandwidth : <span class="text-success">1GB</span></p>
+                                    <p>Onlinespace : <span class="text-success">50MB</span></p>
+                                    <p>Support : <span class="text-success">No</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pricing-plan card text-center">
+                            <div class="card-body p-4">
+                                <h5 class="mt-2 mb-5">Premium</h5>
+                                <h1 class="mb-5"><sup><small>$</small></sup>29/ <span class="font-16">Mo</span></h1>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Join now</a>
+                                </div>
+                                <div class="plan-features mt-5">
+                                    <p>Bandwidth : <span class="text-success">2GB</span></p>
+                                    <p>Onlinespace : <span class="text-success">1GB</span></p>
+                                    <p>Support : <span class="text-success">No</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pricing-plan card text-center">
+                            <div class="card-body p-4">
+                                <h5 class="mt-2 mb-5">Developer</h5>
+                                <h1 class="mb-5"><sup><small>$</small></sup>39/ <span class="font-16">Mo</span></h1>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Join now</a>
+                                </div>
+                                <div class="plan-features mt-5">
+                                    <p>Bandwidth : <span class="text-success">3GB</span></p>
+                                    <p>Onlinespace : <span class="text-success">2GB</span></p>
+                                    <p>Support : <span class="text-success">Yes</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    <!-- Pricing end -->
+
+    <!-- Cta start -->
+    <!--<section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h5 class="text-primary text-uppercase small-title">Subscribe</h5>
+                        <h4 class="mb-3">Subscribe to our Newsletter</h4>
+                        <p>It will be as simple as occidental in fact, it will be Occidental.</p>-->
+                    <!--</div>
+                </div>-->
+
+                <!--<div class="col-xl-8 col-lg-10">
+                    <div class="text-center">
+                        <div class="subscribe">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div>
+                                            <input type="text" class="form-control email"
+                                                placeholder="Enter your E-mail address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="mt-3 mt-md-0">
+                                            <button type="submit" class="btn btn-primary btn-block email-btn">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <!-- end row -->
+        <!--</div>-->
+        <!-- end container -->
+    <!--</section>-->
+    <!-- Cta end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div>
+                        <h5 class="mb-4 footer-list-title">Eric Muriithi</h5>
+                        <p>In love with technology and extremely passionate about building products that scale internationally. Has developed products for individuals and businesses in the United Kingdom, Poland, Burkina Faso, Dubai, Nigeria, and Kenya. Let's collaborate!. </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-sm-6">
+                    <div>
+                        <h5 class="mb-4 footer-list-title">Eric Muriithi</h5>
+                        <ul class="list-unstyled footer-list-menu">
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <!--<li><a href="products.html">Products</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="col-lg-2 col-sm-6">
+                    <div>
+                        <h5 class="mb-4 footer-list-title">Sustainability</h5>
+                        <ul class="list-unstyled footer-list-menu">
+                            <li><a href="#">Clean Water & Sanitation</a></li>
+                            <li><a href="#">Industry, Innovation & Infrastructure</a></li>
+                            <li><a href="#">Responsible Consumption & Production </a></li>
+                            <li><a href="#">Climate Action</a></li>
+                        </ul>
+                    </div>
+                </div>-->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div>
+                        <h5 class="mb-4 footer-list-title">Contact</h5>
+
+                        <div>
+                            <div class="media">
+                                <i data-feather="map-pin" class="icon-dual-light icons-sm mt-1 mr-2"></i>
+                                <div class="media-body">
+                                    <p>Nairobi, Kenya</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i data-feather="mail" class="icon-dual-light icons-sm mt-1 mr-2"></i>
+                                <div class="media-body">
+                                    <p>emuriithi42@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i data-feather="phone" class="icon-dual-light icons-sm mt-1 mr-2"></i>
+                                <div class="media-body">
+                                    <p>+254 714 641 177</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Footer alt start -->
+    <section class="bg-primary py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <div class="float-sm-left">
+                        <a href="#">
+                            <img src="images/logo-light.png" alt="" height="20">
+                        </a>
+                    </div> -->
+                    <!-- <div class="float-sm-right mt-4 mt-sm-0">
+                        <p class="copyright-desc text-white mb-0">©Copyright 2022 Bogoria Equatorial Farm</p>
+                    </div> -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Footer alt start -->
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/feather.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+
+    <script src="./toasty/toasty.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyBCKGebbld_JyfmN2GzYGCIp_SwLZ74J9A",
+            authDomain: "manutratech-website.firebaseapp.com",
+            databaseURL: "https://manutratech-website.firebaseio.com",
+            projectId: "manutratech-website",
+            storageBucket: "manutratech-website.appspot.com",
+            messagingSenderId: "621130592858",
+            appId: "1:621130592858:web:3fbedae3ad48e86b92de63",
+            measurementId: "G-NQMHWKW0RR"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- firebase.js -->
+    <script src="js/firebase.js"></script>
+
+</body>
+
+</html>
